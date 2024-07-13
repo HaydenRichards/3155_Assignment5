@@ -1,0 +1,2 @@
+CREATE DATABASE sandwich_maker_api;
+SHOW DATABASES;
