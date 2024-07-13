@@ -162,7 +162,7 @@ def create_order_detail(order_detail: schemas.OrderDetailCreate, db: Session = D
     return order_details.create(db=db, order_detail=order_detail)
 
 
-@app.get("/order_details/", response_model=list[schemas.OrderDetail], tags=["OrdersDetails"])
+@app.get("/order_details/", response_model=list[schemas.OrderDetail], tags=["OrderDetails"])
 def read_orders(db: Session = Depends(get_db)):
     return orders.read_all(db)
 
